@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work1</title>
+  </head>
+  <body>
+    <h2>Novell Services Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" />
+
+      <br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+
+      <br /><br />
+
+      <label for="city">City of Employment:</label>
+      <input type="text" name="city" id="city" />
+
+      <br /><br />
+
+      <label for="werserver">Web Server:</label>
+      <select id="werserver">
+        <option value="" disabled selected>
+          &#8212; Choose a server &#8212;
+        </option>
+        <option value="edge">Microsoft Edge</option>
+        <option value="opera">Opera Mini</option>
+        <option value="google">Google</option>
+        <option value="safari">Safari</option>
+      </select>
+
+      <br /><br />
+
+      <p>Please specify your role:</p>
+
+      <input type="radio" name="role" id="admin" />
+      <label for="admin">Admin</label>
+
+      <input type="radio" name="role" id="engineer" />
+      <label for="engineer">Engineer</label>
+
+      <input type="radio" name="role" id="manager" />
+      <label for="manager">Manager</label>
+
+      <br /><br />
+
+      <p>Single Sign-on to the following:</p>
+
+      <input type="checkbox" name="mail" id="mail" />
+      <label for="mail">Mail</label>
+
+      <input type="checkbox" name="payroll" id="payroll" />
+      <label for="payroll">Payroll</label>
+
+      <input type="checkbox" name="self" id="self" />
+      <label for="self">Self-service</label>
+
+      <br /><br />
+
+      <input type="submit" value="Login" />
+      <input type="submit" value="Reset" />
+    </form>
+  </body>
+</html>
