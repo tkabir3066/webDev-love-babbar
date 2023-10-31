@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        background-color: beige;
+        border: 5px solid black;
+        margin: 3px;
+        padding: 3px;
+        display: flex;
+        height: 1200px;
+
+        /*======== display flex hole by default flex-direction row hobe ====== */
+        /* flex-direction: column;
+        flex-direction: column-reverse; */
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+
+        /* by default no-wrap */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /*======= Short notation flex-flow (home work) ===== */
+        /* flex-flow: row wrap; */
+
+        /* justify-content: space-between; */
+        /* align-items: center; */
+
+        /* align-content: space-around; */
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid brown;
+        margin: 3px;
+        padding: 3px;
+      }
+
+      #box1 {
+        background-color: aqua;
+        order: 2;
+        /* flex-shrink: 4; */
+        /* flex-grow: 5; */
+
+        /* flex-basis: 400px; */
+
+        /* ======Shorthand notation======= */
+        /* flex: flex-grow flex-shrink flex-basis; */
+        flex: 4 4 500px;
+      }
+
+      #box2 {
+        background-color: blue;
+      }
+
+      #box3 {
+        background-color: orange;
+      }
+
+      #box4 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Box 1</div>
+      <div class="box" id="box2">Box 2</div>
+      <div class="box" id="box3">Box 3</div>
+      <div class="box" id="box4">Box 4</div>
+    </div>
+  </body>
+</html>
